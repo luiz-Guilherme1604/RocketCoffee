@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsla(31, 99%, 30%, 1);
+    --secondary-color: hsla(40, 3%, 17%, 1);
+    --paragraph: hsla(0, 0%, 0%, 0.6);
+    --bg-main: hsla(34, 100%, 92%, 1);
+    --bg-secondary: hsla(32, 98%, 83%, 1);
+
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background: var(--bg-main);
+    color: var(--secondary-color);
+
+    font-family: 'Roboto Serif', serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: initial;
+    color: var(--paragraph);
+}
+
+h2 {
+    font-size: 1.8rem;
+
+    background: var(--bg-secondary);
+
+    padding-block: 0.6rem;
+
+    border-radius: 0.5rem;
+}
+
+h3,
+.price {
+    font-size: 1.6rem;
+}
+
+header,
+h2 {
+    text-align: center;
+}
+
+header p,
+.details p {
+    font-size: 1.4rem;
+}
+
+header {
+    padding: 3.2rem;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+header h1 span {
+    color: var(--primary-color);
+}
+
+section {
+    width: 60%;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    margin-block: 2.4rem;
+
+    list-style: none;
+}
+
+.details .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 0.8rem;
+}
+
+.details p {
+    line-height: 2.1rem;
+}
+
+.details .desription p {
+    width: 70%;
+}
